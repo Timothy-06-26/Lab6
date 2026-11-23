@@ -8,7 +8,7 @@ form.addEventListener("submit", async function (event) {
     const name = input.value.trim().toLowerCase();
     message.textContent = "Loading...";
     result.hidden = true;
-    message.textContent = "";
+   
 
     try {
         //Live Data from API
@@ -25,6 +25,8 @@ form.addEventListener("submit", async function (event) {
         document.getElementById("pokemon-type").textContent = pokemon.types.map(item => item.type.name).join(", ");
         document.getElementById("pokemon-height").textContent = (pokemon.height / 10) + " m";
         document.getElementById("pokemon-weight").textContent = (pokemon.weight / 10) + " kg";
+        result.hidden = false;
+         message.textContent = "";
 
     } catch (error){
         message.textContent = error.message;
