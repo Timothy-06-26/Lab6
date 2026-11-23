@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Finder</title>
+    <Link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <main class="app">
+    <header>
+        <div class="eyebrow">
+            <span class="dot"></span> Live Pokedex </div>
+            <h1> Who's that <span> Pokemon?</span></h1>
+            <p class="beginning"> Search by name to discover new pokemon</p>
+    </header>
+
+    <form id="search-form" class="search" autocomplete="on">
+        <label class="sr-only" for="pokemon-input"> Pokemon Name </label>
+        <input id="pokemon-input" type="text" placeholder="Try ditto, pikachu, charmander" />
+
+        <button type="submit" id="search-button"> Search the Pokedex </button>
+    </form>
+
+<div class="actions"><button id="random-button" type="button"> Give me something random</button>
+<span id="status" role="status" aria-live="polite"></span></div>
+
+<section class="pokemon-card" id="pokemon-card" aria-live="polite">
+    <div class="image-panel">
+        <div class="circle"></div>
+        <img id="pokemon-image" alt="" src="" />
+        <span class="image-label"> OFFICIAL ARTWORK </span>
+    </div>
+
+<div class="details">
+    <div id="pokemon-number" class="number">#025</div>
+    <h2 id="pokemon-name"> Pikachu </h2>
+
+    <div id="pokemon-types" class="types"></div>
+    <div class="measurements"></div>
+    <small>HEIGHT</small><strong id="pokemon-height">-</strong>
+    </div>
+    <div>
+        <small> WEIGHT </small>
+        <strong id="pokemon-weight">-</strong>
+    </div>
+
+    <h3> Base stats </h3>
+    <div id="pokemon-stats" class="stats"></div>
+
+    <h3> Abilities </h3>
+    <p id="pokemon-abilities" class="abilities">-</p>
+</div>
+
+
+</section>
+
+<footer> Data From <a href="https://pokeapi.co/" target="_blank"></a></footer>
+</main>
+
+
+<script src="script.js"> </script>
+</body>
+</html>
