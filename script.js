@@ -8,6 +8,7 @@ form.addEventListener("submit", async function (event) {
     const name = input.value.trim().toLowerCase();
     message.textContent = "Loading...";
     result.hidden = true;
+    message.textContent = "";
 
     try {
         //Live Data from API
