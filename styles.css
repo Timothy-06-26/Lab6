@@ -42,6 +42,31 @@ h1 {
 
 h1 span{
     color:#657587;
-    
 
+}
+
+.beginning{
+    color: #6f8090;
+    margin-bottom: 29px;
+}
+
+.search{
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    background: white;
+    border: 1px solid #e4eaf0;
+    border-radius: 16px;
+    box-shadow: 0 10px 28px black;
+}
+
+
+.pokemon-card {
+    display: grid;
+    grid-template-columns: .95fr 1.05fr;
+    overflow: hidden;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 20px 65px black;
+    min-height: 420px;
 }
